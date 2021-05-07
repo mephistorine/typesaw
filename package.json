@@ -1,0 +1,27 @@
+{
+  "name": "typesaw",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mephistorine/typesaw.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": {
+    "name": "Sam Bulatov",
+    "email": "mephistorine@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mephistorine/typesaw/issues"
+  },
+  "homepage": "https://github.com/mephistorine/typesaw#readme"
+}
