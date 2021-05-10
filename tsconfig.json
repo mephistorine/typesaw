@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "es2019",
+    "target": "es2017",
     "outDir": "dist",
     "rootDir": "src",
     "moduleResolution": "node",
@@ -32,7 +32,8 @@
     ]
   },
   "include": [
-    "./src"
+    "./src",
+    "./src/*.txt"
   ],
   "exclude": [
     "node_modules/**"
