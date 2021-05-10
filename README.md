@@ -31,7 +31,8 @@ $ typesaw generate interface Car
 
 **Sugar:**
 - [ ] Error
+
   Class alias but already extended from Error
-  
 - [ ] Barrel (index.ts)
+
   Classical `index.ts` file that collect other files
