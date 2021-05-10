@@ -1,8 +1,6 @@
-import consola from 'consola'
-import { writeFile } from 'fs/promises'
-import { parse, ParsedPath, sep } from 'path'
-
 import { camelCaseIt, kebabCaseIt, pascalCaseIt, snakeCaseIt } from 'case-it'
+import { writeFile } from 'fs/promises'
+import { parse, ParsedPath } from 'path'
 
 import { CaseStyle } from '../case-style'
 import { CliOptions } from '../cli-options'
