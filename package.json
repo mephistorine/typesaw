@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
+    "@waliot-oss/tslint-config": "^1.0.0",
     "tslint": "^6.1.3",
     "typescript": "^4.2.4"
   },
