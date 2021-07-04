@@ -28,7 +28,7 @@ export function stripIndent(strings: TemplateStringsArray, ...values: any[]): st
     return endResult;
   }
 
-  const indent: number = Math.min(...match.map(el => el.length));
+  const indent: number = Math.min(...match.map((el: string) => el.length));
   const regexp: RegExp = new RegExp('^[ \\t]{' + indent + '}', 'gm');
 
   return (indent > 0 ? endResult.replace(regexp, '') : endResult).trim();
@@ -38,11 +38,10 @@ export class ClassSchematic implements Schematic<void> {
   public async generate(name: string, options: CliOptions): Promise<void> {
     const path: ParsedPath = parse(name)
     const template: string = stripIndent`
-      export class ${ pascalCaseIt(name) } {
-        constructor() {
-        }
+    export class ${ pascalCaseIt(name) } {
+      constructor() {
       }
-    `
+    }`
 
     return writeFile(`${ applyCaseStyle(path.name, options.filenameCaseStyle) }.ts`, template)
   }
